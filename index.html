@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f5f7f4" />
+  <meta name="description" content="Al Día: tu revista personal de actualidad." />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Al Día · Revista personal</title>
+</head>
+<body>
+  <header class="topbar shell">
+    <a class="brand" href="#inicio" aria-label="Al Día, inicio"><span class="brand-mark">AD</span><span>Al Día</span></a>
+    <div class="top-actions"><span class="demo-pill">DEMO</span><button class="icon-button" id="themeToggle" aria-label="Cambiar modo de color">☼</button><button class="menu-button" id="menuToggle" aria-label="Abrir menú">☰</button></div>
+  </header>
+
+  <nav class="section-nav shell" id="sectionNav" aria-label="Secciones">
+    <a class="active" href="#inicio" data-section="inicio">Portada</a><a href="#mundo" data-section="mundo">Mundo</a><a href="#ciencia" data-section="ciencia">Ciencia + tech</a><a href="#salud" data-section="salud">Salud</a><a href="#estudios" data-section="estudios">Estudios</a>
+  </nav>
+
+  <main class="shell" id="app">
+    <section class="hero" id="inicio">
+      <div><p class="eyebrow">MIÉRCOLES · 12 NOV 2026 <span class="dot"></span> 08:42</p><h1>El mundo,<br><em>en contexto.</em></h1><p class="hero-copy">Una lectura breve y rigurosa para empezar el día con lo que importa.</p></div>
+      <div class="hero-note"><span class="note-icon">✦</span><div><strong>Tu edición está lista</strong><p>5 claves seleccionadas para ti</p></div></div>
+    </section>
+
+    <section class="briefing" aria-labelledby="briefing-title">
+      <div class="section-heading"><div><p class="eyebrow">LA EDICIÓN DE HOY</p><h2 id="briefing-title">5 claves del día</h2></div><button class="text-button" id="refreshButton">Actualizar <span>↗</span></button></div>
+      <div class="key-grid">
+        <article class="key-card key-featured"><span class="number">01</span><div class="category-tag world">MUNDO</div><h3>Europa busca una nueva hoja de ruta energética</h3><p>Los ministros avanzan en un acuerdo para acelerar la transición sin perder competitividad industrial.</p><span class="read-time">4 min de lectura</span></article>
+        <article class="key-card"><span class="number">02</span><div class="category-tag science">CIENCIA + TECH</div><h3>La IA aprende a razonar con menos datos</h3><p class="muted">Un nuevo enfoque reduce el coste de entrenamiento.</p><span class="read-time">3 min</span></article>
+        <article class="key-card"><span class="number">03</span><div class="category-tag health">SALUD</div><h3>Lo que sí sabemos sobre el sueño y la memoria</h3><p class="muted">La evidencia clínica se acumula.</p><span class="read-time">5 min</span></article>
+        <article class="key-card"><span class="number">04</span><div class="category-tag studies">ESTUDIOS</div><h3>El mapa de la desigualdad digital</h3><p class="muted">Resultados de un análisis internacional.</p><span class="read-time">6 min</span></article>
+        <article class="key-card"><span class="number">05</span><div class="category-tag world">ESPAÑA</div><h3>La vivienda entra en una nueva fase</h3><p class="muted">Datos y contexto para entender el mercado.</p><span class="read-time">4 min</span></article>
+      </div>
+    </section>
+
+    <section class="quick-read" id="en-60"><div class="quick-icon">⏱</div><div><p class="eyebrow">PARA CUANDO VAS CON PRISA</p><h2>En 60 segundos</h2><p>La versión esencial de las noticias que no quieres perderte.</p></div><button class="round-arrow" id="quickReadButton" aria-label="Leer en 60 segundos">→</button></section>
+
+    <section class="feed-section" id="mundo"><div class="section-heading"><div><p class="eyebrow">EXPLORA LA ACTUALIDAD</p><h2>Lo último</h2></div><div class="filter-wrap"><button class="filter active" data-filter="todos">Todo</button><button class="filter" data-filter="mundo">Mundo</button><button class="filter" data-filter="ciencia">Ciencia</button><button class="filter" data-filter="salud">Salud</button></div></div>
+      <div class="news-list" id="newsList">
+        <article class="news-item" data-category="mundo"><div class="news-index">06</div><div class="news-body"><div class="category-tag world">REINO UNIDO</div><h3>El nuevo pacto comercial abre una etapa de negociación</h3><p>Las claves y las primeras reacciones desde Londres y Bruselas.</p><div class="meta">Hace 38 min <span>·</span> 2 min</div></div><div class="news-art art-blue">◌</div></article>
+        <article class="news-item" data-category="ciencia"><div class="news-index">07</div><div class="news-body"><div class="category-tag science">CIENCIA + TECH</div><h3>Un sensor del tamaño de una célula observa el interior del cuerpo</h3><p>El avance podría transformar el diagnóstico temprano.</p><div class="meta">Hace 1 h <span>·</span> 5 min</div></div><div class="news-art art-lime">✳</div></article>
+        <article class="news-item" data-category="salud"><div class="news-index">08</div><div class="news-body"><div class="category-tag health">SALUD · EVIDENCIA CLÍNICA</div><h3>Qué dice la investigación reciente sobre la inflamación crónica</h3><p>Una lectura guiada de tres estudios revisados por pares.</p><div class="meta">Hace 2 h <span>·</span> 7 min</div></div><div class="news-art art-orange">+</div></article>
+      </div>
+    </section>
+
+    <section class="health-section" id="salud"><div class="section-heading"><div><p class="eyebrow">UNA MIRADA MÁS CUIDADA</p><h2>Salud, sin ruido</h2></div><a class="text-button" href="#salud">Ver sección completa <span>↗</span></a></div><div class="health-grid"><article><div class="health-icon evidence">✚</div><p class="eyebrow">01 · EVIDENCIA CLÍNICA</p><h3>Lo que ha sido estudiado y replicado</h3><p>Ensayos, revisiones sistemáticas y resultados que resisten una lectura crítica.</p></article><article><div class="health-icon alert">!</div><p class="eyebrow">02 · ALERTAS Y REGULACIÓN</p><h3>Lo que conviene saber ahora</h3><p>Cambios de guías, alertas sanitarias y decisiones que afectan a tu día a día.</p></article><article><div class="health-icon emerging">✦</div><p class="eyebrow">03 · ENFOQUES EMERGENTES</p><h3>Las hipótesis que están abriendo camino</h3><p>Ideas prometedoras, todavía en investigación, explicadas sin exageraciones.</p></article></div></section>
+  </main>
+
+  <footer class="footer shell"><div class="brand"><span class="brand-mark">AD</span><span>Al Día</span></div><p>Tu revista personal de actualidad.</p><span class="footer-demo">Contenido de ejemplo · Conecta tu fuente para actualizar</span></footer>
+  <div class="toast" id="toast" role="status">Edición actualizada · contenido demo</div>
+  <script src="app.js"></script>
+</body>
+</html>
