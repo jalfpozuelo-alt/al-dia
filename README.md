@@ -19,9 +19,10 @@ Abre `index.html` en un navegador o sirve la carpeta con cualquier servidor est�
 
 ## Conectar Google Apps Script
 
-La app intenta cargar noticias reales desde `config.js` mediante `fetch` al pulsar “Actualizar” y al abrir la app. Ahora mismo `config.js` viene con `apiUrl: ""`, por lo que la app muestra el contenido DEMO y el estado de conexión lo indica claramente.
+La app intenta cargar noticias reales desde `config.js` mediante `fetch` al pulsar “Actualizar” y al abrir la app. La URL proporcionada ya está configurada, pero actualmente responde `Función de script no encontrada: doGet`, por lo que la app muestra el contenido DEMO y el estado de conexión lo indica claramente.
 
 1. Despliega el script REVISTA DIARIA como Web App (`/exec`).
+   El despliegue debe incluir una función global `doGet(e)`; el endpoint actual no la incluye o apunta a otra versión del proyecto.
 2. Haz que `doGet()` devuelva JSON y añada `Access-Control-Allow-Origin` para el dominio de GitHub Pages (o usa un proxy backend seguro).
 3. Define el contrato con un array de objetos que incluya `title`/`titulo`, `summary`/`resumen`, `category`/`seccion`, `url`/`enlace`, `time`/`fecha` y opcionalmente `minutes`/`tiempoLectura`.
 4. Sustituye `apiUrl` en `config.js` por la URL pública del Web App y vuelve a publicar.
