@@ -5,3 +5,4 @@
 #refreshButton{display:none}
 .news-art{display:none}.news-item{grid-template-columns:55px 1fr!important}@media(max-width:800px){.news-item{grid-template-columns:35px 1fr!important}}
 .key-card h3 a,.health-grid h3 a{color:inherit;text-decoration:none}.key-card h3 a:hover,.health-grid h3 a:hover,.news-body h3 a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.hero > div:first-child > .eyebrow{font-size:12px;font-weight:600;color:var(--ink);letter-spacing:.1em}
