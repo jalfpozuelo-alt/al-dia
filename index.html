@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="integration.css" />
   <title>Al Día · Revista personal</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
 
   <main class="shell" id="app">
     <section class="hero" id="inicio">
-      <div><p class="eyebrow">MIÉRCOLES · 12 NOV 2026 <span class="dot"></span> 08:42</p><h1>El mundo,<br><em>en contexto.</em></h1><p class="hero-copy">Una lectura breve y rigurosa para empezar el día con lo que importa.</p></div>
+      <div><p class="eyebrow">MIÉRCOLES · 12 NOV 2026 <span class="dot"></span> 08:42</p><h1>El mundo,<br><em>en contexto.</em></h1><p class="hero-copy">Una lectura breve y rigurosa para empezar el día con lo que importa.</p><div class="data-status" id="dataStatus"><span class="status-light"></span><span id="dataStatusText">Modo demo · configura tu fuente</span></div></div>
       <div class="hero-note"><span class="note-icon">✦</span><div><strong>Tu edición está lista</strong><p>5 claves seleccionadas para ti</p></div></div>
     </section>
 
@@ -54,6 +55,7 @@
 
   <footer class="footer shell"><div class="brand"><span class="brand-mark">AD</span><span>Al Día</span></div><p>Tu revista personal de actualidad.</p><span class="footer-demo">Contenido de ejemplo · Conecta tu fuente para actualizar</span></footer>
   <div class="toast" id="toast" role="status">Edición actualizada · contenido demo</div>
+  <script src="config.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
