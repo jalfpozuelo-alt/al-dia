@@ -19,7 +19,7 @@ Abre `index.html` en un navegador o sirve la carpeta con cualquier servidor est�
 
 ## Conectar Google Apps Script
 
-La app intenta cargar noticias reales desde `config.js` mediante `fetch` al pulsar “Actualizar” y al abrir la app. La URL proporcionada ya está configurada, pero actualmente responde `Función de script no encontrada: doGet`, por lo que la app muestra el contenido DEMO y el estado de conexión lo indica claramente.
+La app intenta cargar noticias reales desde `config.js` mediante `fetch` al pulsar “Actualizar” y al abrir la app. La URL activa devuelve JSON compatible con `ok`, `generatedAt`, `cached`, `subject`, `html` y `text`.
 
 1. Despliega el script REVISTA DIARIA como Web App (`/exec`).
    El despliegue debe incluir una función global `doGet(e)`; el endpoint actual no la incluye o apunta a otra versión del proyecto.
