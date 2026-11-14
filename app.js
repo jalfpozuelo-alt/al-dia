@@ -39,4 +39,4 @@ lastUpdate.textContent = 'Última actualización: sin datos';
 refreshButton.parentElement.insertBefore(lastUpdate, refreshButton);
 refreshButton.addEventListener('click', () => { if (refreshButton.disabled) return; refreshButton.disabled = true; refreshButton.textContent = 'Recopilando…'; setStatus('loading', 'Recopilando información…'); loadNews(true).finally(() => { refreshButton.disabled = false; refreshButton.innerHTML = 'Actualizar <span>↗</span>'; }); });
 heroRefreshButton.addEventListener('click', () => refreshButton.click());
-loadNews();
+loadNews(true);
